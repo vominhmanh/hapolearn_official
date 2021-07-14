@@ -29,7 +29,6 @@ header {
       }
    }
 }
-
 .fixed {
    @media only screen and (max-width: 575.98px) {
       position: fixed;
@@ -38,7 +37,6 @@ header {
       background-color: white;
    }
 }
-
 .navbar-menu-div ul li {
    @include opensans();
    text-align: center;
@@ -53,7 +51,6 @@ header {
       }
    }
 }
-
 @media only screen and (min-width: 1200px) {
    .navbar-menu-div {
       display: flex;
@@ -78,11 +75,9 @@ header {
       }
    }
 }
-
 div.align {
    height: 72px;
 }
-
 .header-banner {
    @media only screen and (max-width: 575.98px) {
    }
@@ -124,7 +119,6 @@ div.align {
       }
    }
 }
-
 .header-footer {
    height: 150px;
    background-color: $gray;
