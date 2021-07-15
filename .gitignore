@@ -1,4 +1,4 @@
-
+*.vscode
 #*
 *.css
 css/style.css
