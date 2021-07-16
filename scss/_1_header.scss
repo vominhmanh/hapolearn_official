@@ -1,123 +1,118 @@
-.my-container {
-   @media only screen and (min-width: 1200px) {
-      max-width: 80%;
-   }
-}
 header {
-   padding: 2vh 0;
-   background-color: white;
-   .container {
-      padding: 0;
-   }
+  padding: 2vh 0;
+  background-color: white;
+  .container {
+    padding: 0;
+  }
 }
 .navbar {
-   padding: 0;
-   @media (min-width: 576px) and (max-width: 1199.98px) {
-      display: flex;
-      flex-direction: column;
-   }
-   a.navbar-brand {
-      @media only screen and (max-width: 575.98px) {
-         position: absolute;
-         top: -5px;
-         left: 25%;
-         width: 200px;
-      }
+  padding: 0;
+  @media (min-width: 576px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column;
+  }
+  a.navbar-brand {
+    @media only screen and (max-width: 575.98px) {
+      position: absolute;
+      top: -5px;
+      left: 25%;
+      width: 200px;
+    }
 
-      img {
-         width: 100%;
-      }
-   }
+    img {
+      width: 100%;
+    }
+  }
 }
 .fixed {
-   @media only screen and (max-width: 575.98px) {
-      position: fixed;
-      z-index: 100;
-      width: 100vw;
-      background-color: white;
-   }
+  @media only screen and (max-width: 575.98px) {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    background-color: white;
+  }
 }
 .navbar-menu-div ul li {
-   @include opensans();
-   text-align: center;
-   a {
-      display: inline;
-      color: black ;
-      padding: 8px 16px;
-      font-weight: bold;
-      &.active {
-         @include normal-link();
-         @include active-link();
-      }
-   }
+  @include opensans();
+  text-align: center;
+  a {
+    display: inline;
+    color: black;
+    padding: 8px 16px;
+    font-weight: bold;
+    &.active {
+      @include normal-link();
+      @include active-link();
+    }
+  }
 }
 @media only screen and (min-width: 1200px) {
-   .navbar-menu-div {
-      display: flex;
-      justify-content: flex-end;
-      padding: 20px 0;
-   }
+  .navbar-menu-div {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+  }
 }
 @media only screen and (max-width: 575.98px) {
-   .navbar-menu-div {
-      ul {
-         padding: 50px 0;
-         li {
-            height: 80px;
-            font-size: 20px;
-            &.align {
-               height: 60vh;
-            }
-            a.active {
-               @include active-link-mobile();
-            }
-         }
+  .navbar-menu-div {
+    ul {
+      padding: 50px 0;
+      li {
+        height: 80px;
+        font-size: 20px;
+        &.align {
+          height: 60vh;
+        }
+        a.active {
+          @include active-link-mobile();
+        }
       }
-   }
+    }
+  }
 }
 div.align {
-   height: 72px;
+  height: 72px;
 }
 .header-banner {
-   @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
-      .header-banner-title {
-         position: absolute;
-         top: 20%;
-         left: 5%;
-         #learn-anytime-anywhere {
-            font-size: 25px;
-         }
-         #at-hapolearn {
-            font-size: 25px;
-         }
-         #description {
-            font-size: 10px;
-         }
-         #start-learning {
-            font-size: 15px;
-         }
+  @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
+    .header-banner-title {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      #learn-anytime-anywhere {
+        font-size: 25px;
       }
-   }
-   @media only screen and (min-width: 1200px) {
-      .header-banner-title {
-         position: absolute;
-         top: 20%;
-         left: 3%;
-         #learn-anytime-anywhere {
-         }
-         #at-hapolearn {
-            font-size: 75px;
-         }
-         #description {
-            font-size: 20px;
-         }
-         #start-learning {
-            font-size: 40px;
-         }
+      #at-hapolearn {
+        font-size: 25px;
       }
-   }
+      #description {
+        font-size: 10px;
+      }
+      #start-learning {
+        font-size: 15px;
+      }
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .header-banner-title {
+      position: absolute;
+      top: 20%;
+      left: 3%;
+      #learn-anytime-anywhere {
+      }
+      #at-hapolearn {
+        font-size: 75px;
+      }
+      #description {
+        font-size: 20px;
+      }
+      #start-learning {
+        font-size: 40px;
+      }
+    }
+  }
 }
 .header-footer {
-   height: 150px;
-   background-color: $gray;
+  height: 150px;
+  background-color: $gray;
 }
