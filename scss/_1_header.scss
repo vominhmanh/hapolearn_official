@@ -1,10 +1,6 @@
 header {
   padding: 2vh 0;
   background-color: white;
-
-  .container {
-    padding: 0;
-  }
 }
 
 .navbar {
@@ -41,6 +37,7 @@ header {
 .navbar-menu-div ul li {
   @include opensans();
   text-align: center;
+  padding: 0 5px;
 
   a {
     display: inline;
@@ -86,54 +83,4 @@ header {
 
 div.align {
   height: 72px;
-}
-
-.header-banner {
-  @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
-    .header-banner-title {
-      position: absolute;
-      top: 20%;
-      left: 5%;
-
-      .learn-anytime-anywhere {
-        font-size: 25px;
-      }
-
-      .at-hapolearn {
-        font-size: 25px;
-      }
-
-      .description {
-        font-size: 10px;
-      }
-
-      .start-learning {
-        font-size: 15px;
-      }
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    .header-banner-title {
-      position: absolute;
-      top: 20%;
-      left: 3%;
-
-      .at-hapolearn {
-        font-size: 75px;
-      }
-
-      .description {
-        font-size: 20px;
-      }
-
-      .start-learning {
-        font-size: 40px;
-      }
-    }
-  }
-}
-
-.header-footer {
-  height: 150px;
-  background-color: $gray;
 }
