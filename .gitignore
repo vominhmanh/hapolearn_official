@@ -1,8 +1,9 @@
 .vscode
 #*
-*.css
+
 css/style.css
-scss/style.css
+
 scss/style.css.map
 *.json
 *.map
+scss/_variable.css
