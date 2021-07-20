@@ -22,6 +22,7 @@ $gray: #eaebf0;
   font-weight: 700px;
   line-height: 19.07px;
 }
+
 @mixin utmbryantlg {
   font-family: $utmbryantlg;
   font-size: 1rem;
@@ -29,18 +30,22 @@ $gray: #eaebf0;
   line-height: 19.07px;
   color: black;
 }
+
 @mixin normal-link {
   border-radius: 25px;
   padding: 10px 30px;
 }
+
 @mixin active-link {
   background-color: $active-bg;
   color: white !important;
 }
+
 @mixin active-link-mobile {
   background-color: white !important;
   color: $light-green !important;
 }
+
 .active-btn {
   border-radius: 50px !important;
   @include normal-link();

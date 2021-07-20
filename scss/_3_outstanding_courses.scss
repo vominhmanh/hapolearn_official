@@ -6,6 +6,7 @@
 .courses-session {
   .row {
     margin-top: 50px;
+
     > div {
       margin-bottom: 20px;
     }
@@ -53,7 +54,7 @@
 }
 
 .view-other-courses {
-  h1 {
+  .h-mobile {
     @media only screen and (max-width: 575.98px) {
       font-size: 5vw;
     }

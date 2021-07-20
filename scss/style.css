@@ -171,7 +171,7 @@ div.align {
   background-color: white !important;
   color: #b2d235 !important; }
   @media only screen and (max-width: 575.98px) {
-    .view-other-courses h1 {
+    .view-other-courses .h-mobile {
       font-size: 5vw; } }
 
 /*# sourceMappingURL=style.css.map */
