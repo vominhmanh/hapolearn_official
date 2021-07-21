@@ -174,4 +174,99 @@ div.align {
     .view-other-courses .h-mobile {
       font-size: 5vw; } }
 
+.carousel-inner .background {
+  padding: 10% 0; }
+@media only screen and (max-width: 575.98px) {
+  .carousel-inner .background {
+    padding: 15% 0;
+    height: 750px; }
+  .carousel-inner .decor {
+    position: absolute; }
+    .carousel-inner .decor.laptop-large {
+      width: 80vw;
+      bottom: 5%;
+      left: 10%; }
+    .carousel-inner .decor.laptop-small {
+      width: 60vw;
+      top: -11%;
+      left: 0%; }
+    .carousel-inner .decor.why-hapolearn {
+      top: 15%;
+      left: 40%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 700px;
+      line-height: 19.07px;
+      color: white;
+      font-size: 40px;
+      width: 50%;
+      line-height: 50px; }
+    .carousel-inner .decor.reason {
+      top: 35%;
+      left: 10%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 700px;
+      line-height: 19.07px;
+      color: white;
+      font-size: 12px; } }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .carousel-inner .decor {
+    position: absolute; }
+    .carousel-inner .decor.laptop-large {
+      width: 40vw;
+      top: 45%;
+      left: 50%; }
+    .carousel-inner .decor.laptop-small {
+      width: 33vw;
+      top: -11%;
+      left: 0%; }
+    .carousel-inner .decor.why-hapolearn {
+      top: 25%;
+      left: 30%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 700px;
+      line-height: 19.07px;
+      color: white;
+      font-size: 40px; }
+    .carousel-inner .decor.reason {
+      top: 50%;
+      left: 10%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 700px;
+      line-height: 19.07px;
+      color: white;
+      font-size: 1.5vw; } }
+@media only screen and (min-width: 768px) {
+  .carousel-inner .decor {
+    position: absolute; }
+    .carousel-inner .decor.laptop-large {
+      width: 40vw;
+      top: 30%;
+      left: 50%; }
+    .carousel-inner .decor.laptop-small {
+      width: 33vw;
+      top: -11%;
+      left: 0%; }
+    .carousel-inner .decor.why-hapolearn {
+      top: 50%;
+      left: 10%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 700px;
+      line-height: 19.07px;
+      color: white;
+      font-size: 5vw; }
+    .carousel-inner .decor.reason {
+      top: 60%;
+      left: 10%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 700px;
+      line-height: 19.07px;
+      color: white;
+      font-size: 1.5vw; } }
+
 /*# sourceMappingURL=style.css.map */

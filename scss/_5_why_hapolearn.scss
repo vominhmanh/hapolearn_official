@@ -1,0 +1,114 @@
+.carousel-inner {
+  .background {
+    padding: 10% 0;
+  }
+
+  @media only screen and (max-width: 575.98px) {
+    .background {
+      padding: 15% 0;
+      height: 750px;
+    }
+
+    .decor {
+      position: absolute;
+
+      &.laptop-large {
+        width: 80vw;
+        bottom: 5%;
+        left: 10%;
+      }
+
+      &.laptop-small {
+        width: 60vw;
+        top: -11%;
+        left: 0%;
+      }
+
+      &.why-hapolearn {
+        top: 15%;
+        left: 40%;
+        @include opensans();
+        color: white;
+        font-size: 40px;
+        width: 50%;
+        line-height: 50px;
+      }
+
+      &.reason {
+        top: 35%;
+        left: 10%;
+        @include opensans();
+        color: white;
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .decor {
+      position: absolute;
+
+      &.laptop-large {
+        width: 40vw;
+        top: 45%;
+        left: 50%;
+      }
+
+      &.laptop-small {
+        width: 33vw;
+        top: -11%;
+        left: 0%;
+      }
+
+      &.why-hapolearn {
+        top: 25%;
+        left: 30%;
+        @include opensans();
+        color: white;
+        font-size: 40px;
+      }
+
+      &.reason {
+        top: 50%;
+        left: 10%;
+        @include opensans();
+        color: white;
+        font-size: 1.5vw;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .decor {
+      position: absolute;
+
+      &.laptop-large {
+        width: 40vw;
+        top: 30%;
+        left: 50%;
+      }
+
+      &.laptop-small {
+        width: 33vw;
+        top: -11%;
+        left: 0%;
+      }
+
+      &.why-hapolearn {
+        top: 50%;
+        left: 10%;
+        @include opensans();
+        color: white;
+        font-size: 5vw;
+      }
+
+      &.reason {
+        top: 60%;
+        left: 10%;
+        @include opensans();
+        color: white;
+        font-size: 1.5vw;
+      }
+    }
+  }
+}
