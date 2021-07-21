@@ -11,6 +11,7 @@
 
     .decor {
       position: absolute;
+
       &.laptop-large {
         width: 80vw;
         bottom: 5%;
@@ -42,6 +43,7 @@
       }
     }
   }
+
   @media only screen and (min-width: 576px) and (max-width: 767.98px) {
     .decor {
       position: absolute;
