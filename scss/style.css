@@ -269,28 +269,26 @@ div.align {
       color: white;
       font-size: 1.5vw; } }
 
-.feedback {
-  margin-top: -100px; }
-  .feedback .feedback-title {
-    color: #b2d235;
-    font-size: 2.5rem; }
-  @media only screen and (min-width: 1024px) {
-    .feedback .feedback-description {
-      width: 60%;
-      font-size: 26px; } }
-  @media only screen and (max-width: 1023.98px) {
-    .feedback .feedback-description {
-      width: 100%;
-      font-size: 18px; } }
-  .feedback .comment {
-    border: 0.5px gray solid;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 5px 10px 8px gray;
-    min-height: 150px; }
-    .feedback .comment .comment-text {
-      padding: 1em;
-      border-left: 5px gray solid; }
+.feedback .feedback-title {
+  color: #b2d235;
+  font-size: 2.5rem; }
+@media only screen and (min-width: 1024px) {
+  .feedback .feedback-description {
+    width: 60%;
+    font-size: 26px; } }
+@media only screen and (max-width: 1023.98px) {
+  .feedback .feedback-description {
+    width: 100%;
+    font-size: 18px; } }
+.feedback .comment {
+  border: 0.5px gray solid;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 10px 8px gray;
+  min-height: 150px; }
+  .feedback .comment .comment-text {
+    padding: 1em;
+    border-left: 5px gray solid; }
 
 .customer {
   display: flex; }
