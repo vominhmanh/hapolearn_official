@@ -312,18 +312,18 @@ div.align {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
-    color: #505353; }
+    color: black; }
   .customer .customer-rate {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    color: #f2c54f; }
+    color: #b2d235; }
 
 .comment-div {
   /* this border color controlls the color of the triangle (what looks like the fill of the triangle) */
   /* this border color controlls the outside, thin border */ }
   .comment-div .comment {
-    border: 0.5px solid #e2e2e2;
+    border: 0.5px solid gray;
     border-radius: 10px; }
   .comment-div .comment:after,
   .comment-div .comment:before {

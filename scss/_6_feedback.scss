@@ -1,49 +1,13 @@
-$font_Open_Sans: "Open Sans", sans-serif;
-$font_UTM_BryantLG: "utm_bryantlgregular";
-$white_color: #ffffff;
-$text_color: #505353;
-$title_color: #b2d235;
-$button_color: #b2d235;
-$button_hover_color: #748b18;
-$hapo_learn_titile_color: #11114e;
-$frontend_course_color: #3f6185;
-$laravel_course_color: #dc594c;
-$php_course_color: #556598;
-$hapo_learn_banner_background_color: #e5e5e5;
-$hapo_learn_banner_box_shadow_color: rgba(0, 0, 0, 0.25);
-$main_courses_box_shadow: #6f8710;
-$css_course_color: #24abe2;
-$rails_course_color: #e14e40;
-$java_course_color: #1b75bb;
-$view_all_courses: #90ab26;
-$border_comment: #e2e2e2;
-$yellow_color: #f2c54f;
-$vertical_in_comment: #d9dadc;
-$arrow_color: #c4c4c4;
-$footer_bottom_color: #454545;
-$hapolearn_txt_in_chatbox: #7f7f7f;
-$background_message: #f1f0f0;
-$button_message_color: #3184f7;
-$chat_with_hapolearn_in_messenger_txt: #b3b3b3;
-$background_color_input: #f2f2f2;
-$border_color_input: #e1e1e1;
-$login_with_color: #dbdbdb;
-$google_color: #dc4e41;
-$google_hover_color: #a22014;
-$facebook_color: #3b5999;
-$facebook_hover_color: #1f3669;
-$messenger_button_hover_color: #1d56a7;
-$icon_arrow_feedback_color: #969494;
-$background_color_header_in_768px: #fefbfb;
-
 .feedback {
     margin-top: -100px;
+
     .feedback-title {
         color: $light-green;
         font-size: 2.5rem;
     }
 
     .feedback-description {
+
         @media only screen and (min-width: 1024px) {
             width: 60%;
             font-size: 26px;
@@ -86,7 +50,7 @@ $background_color_header_in_768px: #fefbfb;
         font-weight: bold;
         font-size: 20px;
         line-height: 25px;
-        color: $hapo_learn_titile_color;
+        color: $hapo_learn_title_color;
         -webkit-text-stroke-width: 0.5px;
     }
 
@@ -94,20 +58,21 @@ $background_color_header_in_768px: #fefbfb;
         font-weight: bold;
         font-size: 16px;
         line-height: 20px;
-        color: $text_color;
+        color: black;
     }
 
     .customer-rate {
         font-weight: normal;
         font-size: 14px;
         line-height: 16px;
-        color: $yellow_color;
+        color: $light-green;
     }
 }
 
 .comment-div {
+
     .comment {
-        border: 0.5px solid $border_comment;
+        border: 0.5px solid gray;
         border-radius: 10px;
     }
 

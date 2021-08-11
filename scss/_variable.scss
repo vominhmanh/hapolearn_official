@@ -9,12 +9,19 @@
     url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("opentype"),
     url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("truetype");
 }
-
+$font_Open_Sans: "Open Sans", sans-serif;
+$font_UTM_BryantLG: "utm_bryantlgregular";
 $opensans: "Open Sans", sans-serif;
+
 $utmbryantlg: "utm-bryantlg";
 $active-bg: #b2d235;
 $light-green: #b2d235;
 $gray: #eaebf0;
+$hapo_learn_title_color: #11114e;
+
+
+$font_Open_Sans: "Open Sans", sans-serif;
+$font_UTM_BryantLG: "utm_bryantlgregular";
 
 @mixin opensans {
   font-family: $opensans;
