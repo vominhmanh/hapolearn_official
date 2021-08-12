@@ -319,44 +319,35 @@ div.align {
     line-height: 16px;
     color: #b2d235; }
 
-.comment-div {
-  /* this border color controlls the color of the triangle (what looks like the fill of the triangle) */
-  /* this border color controlls the outside, thin border */ }
-  .comment-div .comment {
-    border: 0.5px solid gray;
-    border-radius: 10px; }
-  .comment-div .comment:after,
-  .comment-div .comment:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 100%;
-    width: 0;
-    height: 0;
-    border-style: solid; }
-  .comment-div .comment:after {
-    left: 30px;
-    border-color: white transparent transparent transparent;
-    border-width: 10px; }
-  .comment-div .comment:before {
-    left: 29px;
-    border-color: gray transparent transparent transparent;
-    border-width: 11px; }
+.comment-div .comment {
+  border: 0.5px solid gray;
+  border-radius: 10px; }
+.comment-div .comment:after,
+.comment-div .comment:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid; }
+.comment-div .comment:after {
+  left: 30px;
+  border-color: white transparent transparent transparent;
+  border-width: 10px; }
+.comment-div .comment:before {
+  left: 29px;
+  border-color: gray transparent transparent transparent;
+  border-width: 11px; }
 
 .become-a-member-banner {
   position: relative; }
-  .become-a-member-banner .banner-background {
-    width: 100%; }
-    .become-a-member-banner .banner-background img {
-      width: 100%;
-      min-height: 200px;
-      object-fit: cover; }
   .become-a-member-banner .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+    background-image: url(/images/green_banner.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 10% 0; }
     .become-a-member-banner .banner-text .become-a-member-tilte {
       font-weight: bold;
       text-align: center;
@@ -375,9 +366,9 @@ div.align {
   @media only screen and (max-width: 575.98px) {
     .become-a-member-banner .banner-text .become-a-member-tilte {
       font-size: 1rem;
-      margin: 0 auto 20px auto; }
+      margin: 0 20% 5% 20%; }
     .become-a-member-banner .banner-text .become-a-member-button {
-      padding: 10px 10px;
+      padding: 2% 5%;
       font-size: 0.8rem; } }
   @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
     .become-a-member-banner .banner-text .become-a-member-tilte {

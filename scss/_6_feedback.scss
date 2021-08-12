@@ -1,100 +1,99 @@
 .feedback {
-    padding-bottom: 100px;
-    .feedback-title {
-        color: $light-green;
-        font-size: 2.5rem;
+  padding-bottom: 100px;
+  .feedback-title {
+    color: $light-green;
+    font-size: 2.5rem;
+  }
+
+  .feedback-description {
+    @media only screen and (min-width: 1024px) {
+      width: 60%;
+      font-size: 26px;
     }
 
-    .feedback-description {
-        @media only screen and (min-width: 1024px) {
-            width: 60%;
-            font-size: 26px;
-        }
-        @media only screen and (max-width: 1023.98px) {
-            width: 100%;
-            font-size: 18px;
-        }
+    @media only screen and (max-width: 1023.98px) {
+      width: 100%;
+      font-size: 18px;
     }
+  }
 
-    .comment {
-        border: 0.5px gray solid;
-        border-radius: 10px;
-        padding: 10px;
-        box-shadow: 5px 10px 8px gray;
-        min-height: 150px;
+  .comment {
+    border: 0.5px gray solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 10px 8px gray;
+    min-height: 150px;
 
-        .comment-text {
-            padding: 1em;
-            border-left: 5px gray solid;
-        }
+    .comment-text {
+      padding: 1em;
+      border-left: 5px gray solid;
     }
+  }
 }
 
-.customer { 
-    display: flex;
+.customer {
+  display: flex;
 
-    .customer-avatar {
-        height: 60px;
-        width: 60px;
-        margin-left: 11px;
-        border-radius: 50%;
-        background-color: $light-green;
-        .customer-avatar-img {
-            width: 100%;
-        }
+  .customer-avatar {
+    height: 60px;
+    width: 60px;
+    margin-left: 11px;
+    border-radius: 50%;
+    background-color: $light-green;
+    .customer-avatar-img {
+      width: 100%;
     }
+  }
 
-    .customer-name {
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 25px;
-        color: $hapo_learn_title_color;
-        -webkit-text-stroke-width: 0.5px;
-    }
+  .customer-name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: $hapo_learn_title_color;
+    -webkit-text-stroke-width: 0.5px;
+  }
 
-    .customer-languge {
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-        color: black;
-    }
+  .customer-languge {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+  }
 
-    .customer-rate {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 16px;
-        color: $light-green;
-    }
+  .customer-rate {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: $light-green;
+  }
 }
 
 .comment-div {
-    .comment {
-        border: 0.5px solid gray;
-        border-radius: 10px;
-    }
+  .comment {
+    border: 0.5px solid gray;
+    border-radius: 10px;
+  }
 
-    .comment:after,
-    .comment:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 100%;
-        width: 0;
-        height: 0;
-        border-style: solid;
-    }
+  .comment:after,
+  .comment:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
 
-    /* this border color controlls the color of the triangle (what looks like the fill of the triangle) */
-    .comment:after {
-        left: 30px;
-        border-color: white transparent transparent transparent;
-        border-width: 10px;
-    }
+  .comment:after {
+    left: 30px;
+    border-color: white transparent transparent transparent;
+    border-width: 10px;
+  }
 
-    /* this border color controlls the outside, thin border */
-    .comment:before {
-        left: 29px;
-        border-color: gray transparent transparent transparent;
-        border-width: 11px;
-    }
+  .comment:before {
+    left: 29px;
+    border-color: gray transparent transparent transparent;
+    border-width: 11px;
+  }
 }
