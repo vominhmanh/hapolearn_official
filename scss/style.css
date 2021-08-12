@@ -349,11 +349,9 @@ div.align {
     background-image: url(/images/green_banner.png);
     background-position: center;
     background-size: cover;
-    text-align: center;
     padding: 10% 0; }
     .become-a-member-banner .banner-text .become-a-member-tilte {
       font-weight: bold;
-      text-align: center;
       letter-spacing: -0.02em;
       color: white; }
     .become-a-member-banner .banner-text .become-a-member-button {
