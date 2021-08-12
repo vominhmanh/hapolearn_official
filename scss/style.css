@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Open Sans";
-  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"); }
+  font-family: "utm_bryantlgregular";
+  src: url("../fonts/UTM BryantLG.ttf"); }
 @font-face {
   font-family: "utm-bryantlg";
   src: url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("woff"), url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("opentype"), url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("truetype"); }
@@ -10,6 +10,9 @@
   padding: 10px 30px;
   background-color: #b2d235;
   color: white !important; }
+
+body {
+  font-family: "utm_bryantlgregular"; }
 
 header {
   padding: 2vh 0;
@@ -268,5 +271,131 @@ div.align {
       line-height: 19.07px;
       color: white;
       font-size: 1.5vw; } }
+
+.feedback {
+  padding-bottom: 100px; }
+  .feedback .feedback-title {
+    color: #b2d235;
+    font-size: 2.5rem; }
+  @media only screen and (min-width: 1024px) {
+    .feedback .feedback-description {
+      width: 60%;
+      font-size: 26px; } }
+  @media only screen and (max-width: 1023.98px) {
+    .feedback .feedback-description {
+      width: 100%;
+      font-size: 18px; } }
+  .feedback .comment {
+    border: 0.5px gray solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 10px 8px gray;
+    min-height: 150px; }
+    .feedback .comment .comment-text {
+      padding: 1em;
+      border-left: 5px gray solid; }
+
+.customer {
+  display: flex; }
+  .customer .customer-avatar {
+    height: 60px;
+    width: 60px;
+    margin-left: 11px;
+    border-radius: 50%;
+    background-color: #b2d235; }
+    .customer .customer-avatar .customer-avatar-img {
+      width: 100%; }
+  .customer .customer-name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #11114e;
+    -webkit-text-stroke-width: 0.5px; }
+  .customer .customer-languge {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: black; }
+  .customer .customer-rate {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #b2d235; }
+
+.comment-div .comment {
+  border: 0.5px solid gray;
+  border-radius: 10px; }
+.comment-div .comment:after,
+.comment-div .comment:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid; }
+.comment-div .comment:after {
+  left: 30px;
+  border-color: white transparent transparent transparent;
+  border-width: 10px; }
+.comment-div .comment:before {
+  left: 29px;
+  border-color: gray transparent transparent transparent;
+  border-width: 11px; }
+
+.become-a-member-banner {
+  position: relative; }
+  .become-a-member-banner .banner-text {
+    background-image: url(/images/green_banner.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10% 0; }
+    .become-a-member-banner .banner-text .become-a-member-tilte {
+      font-weight: bold;
+      letter-spacing: -0.02em;
+      color: white; }
+    .become-a-member-banner .banner-text .become-a-member-button {
+      background: white;
+      box-shadow: inset 0px 4px 4px gray;
+      border-radius: 35px;
+      font-weight: bold;
+      color: #b2d235; }
+      .become-a-member-banner .banner-text .become-a-member-button:hover {
+        text-decoration: none;
+        background-color: #b2d235;
+        color: white; }
+  @media only screen and (max-width: 575.98px) {
+    .become-a-member-banner .banner-text .become-a-member-tilte {
+      font-size: 1rem;
+      margin: 0 20% 5% 20%; }
+    .become-a-member-banner .banner-text .become-a-member-button {
+      padding: 2% 5%;
+      font-size: 0.8rem; } }
+  @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
+    .become-a-member-banner .banner-text .become-a-member-tilte {
+      font-size: 2rem;
+      margin: 0 auto 50px auto;
+      width: 545px; }
+    .become-a-member-banner .banner-text .become-a-member-button {
+      background: white;
+      box-shadow: inset 0px 4px 4px gray;
+      border-radius: 35px;
+      padding: 10px 40px;
+      font-weight: bold;
+      font-size: 30px;
+      color: #b2d235; }
+      .become-a-member-banner .banner-text .become-a-member-button:hover {
+        text-decoration: none;
+        background-color: #b2d235;
+        color: white; } }
+  @media only screen and (min-width: 1200px) {
+    .become-a-member-banner .banner-text .become-a-member-tilte {
+      font-size: 3em;
+      margin: 0 auto 50px auto;
+      width: 545px; }
+    .become-a-member-banner .banner-text .become-a-member-button {
+      border-radius: 35px;
+      padding: 10px 40px;
+      font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
