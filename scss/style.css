@@ -269,26 +269,28 @@ div.align {
       color: white;
       font-size: 1.5vw; } }
 
-.feedback .feedback-title {
-  color: #b2d235;
-  font-size: 2.5rem; }
-@media only screen and (min-width: 1024px) {
-  .feedback .feedback-description {
-    width: 60%;
-    font-size: 26px; } }
-@media only screen and (max-width: 1023.98px) {
-  .feedback .feedback-description {
-    width: 100%;
-    font-size: 18px; } }
-.feedback .comment {
-  border: 0.5px gray solid;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 5px 10px 8px gray;
-  min-height: 150px; }
-  .feedback .comment .comment-text {
-    padding: 1em;
-    border-left: 5px gray solid; }
+.feedback {
+  padding-bottom: 100px; }
+  .feedback .feedback-title {
+    color: #b2d235;
+    font-size: 2.5rem; }
+  @media only screen and (min-width: 1024px) {
+    .feedback .feedback-description {
+      width: 60%;
+      font-size: 26px; } }
+  @media only screen and (max-width: 1023.98px) {
+    .feedback .feedback-description {
+      width: 100%;
+      font-size: 18px; } }
+  .feedback .comment {
+    border: 0.5px gray solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 10px 8px gray;
+    min-height: 150px; }
+    .feedback .comment .comment-text {
+      padding: 1em;
+      border-left: 5px gray solid; }
 
 .customer {
   display: flex; }
@@ -340,5 +342,68 @@ div.align {
     left: 29px;
     border-color: gray transparent transparent transparent;
     border-width: 11px; }
+
+.become-a-member-banner {
+  position: relative; }
+  .become-a-member-banner .banner-background {
+    width: 100%; }
+    .become-a-member-banner .banner-background img {
+      width: 100%;
+      min-height: 200px;
+      object-fit: cover; }
+  .become-a-member-banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .become-a-member-banner .banner-text .become-a-member-tilte {
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: white; }
+    .become-a-member-banner .banner-text .become-a-member-button {
+      background: white;
+      box-shadow: inset 0px 4px 4px gray;
+      border-radius: 35px;
+      font-weight: bold;
+      color: #b2d235; }
+      .become-a-member-banner .banner-text .become-a-member-button:hover {
+        text-decoration: none;
+        background-color: #b2d235;
+        color: white; }
+  @media only screen and (max-width: 575.98px) {
+    .become-a-member-banner .banner-text .become-a-member-tilte {
+      font-size: 1rem;
+      margin: 0 auto 20px auto; }
+    .become-a-member-banner .banner-text .become-a-member-button {
+      padding: 10px 10px;
+      font-size: 0.8rem; } }
+  @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
+    .become-a-member-banner .banner-text .become-a-member-tilte {
+      font-size: 2rem;
+      margin: 0 auto 50px auto;
+      width: 545px; }
+    .become-a-member-banner .banner-text .become-a-member-button {
+      background: white;
+      box-shadow: inset 0px 4px 4px gray;
+      border-radius: 35px;
+      padding: 10px 40px;
+      font-weight: bold;
+      font-size: 30px;
+      color: #b2d235; }
+      .become-a-member-banner .banner-text .become-a-member-button:hover {
+        text-decoration: none;
+        background-color: #b2d235;
+        color: white; } }
+  @media only screen and (min-width: 1200px) {
+    .become-a-member-banner .banner-text .become-a-member-tilte {
+      font-size: 3em;
+      margin: 0 auto 50px auto;
+      width: 545px; }
+    .become-a-member-banner .banner-text .become-a-member-button {
+      border-radius: 35px;
+      padding: 10px 40px;
+      font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

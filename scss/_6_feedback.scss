@@ -1,4 +1,5 @@
 .feedback {
+    padding-bottom: 100px;
     .feedback-title {
         color: $light-green;
         font-size: 2.5rem;
@@ -97,3 +98,107 @@
         border-width: 11px;
     }
 }
+
+.become-a-member-banner {
+    position: relative;
+
+    .banner-background {
+        width: 100%;
+        img {
+            width: 100%;
+            min-height: 200px;
+            object-fit: cover;
+        }
+    }
+    
+    .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+        .become-a-member-tilte {
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: -0.02em;
+            color: white;   
+        }
+
+        .become-a-member-button {
+            background: white;
+            box-shadow: inset 0px 4px 4px gray;
+            border-radius: 35px;
+            font-weight: bold;
+            color: $light-green;
+
+            &:hover {
+                text-decoration: none;
+                background-color: $light-green;
+                color: white;
+            }
+        }
+    }
+    @media only screen and (max-width: 575.98px) {
+        .banner-text {
+            .become-a-member-tilte { 
+                font-size: 1rem;
+                margin: 0 auto 20px auto;
+            }
+      
+            .become-a-member-button {
+                padding: 10px 10px;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
+    
+        .banner-text {
+           
+            .become-a-member-tilte { 
+                
+                font-size: 2rem;
+                margin: 0 auto 50px auto;
+                width: 545px;
+            }
+      
+            .become-a-member-button {
+                background: white;
+                box-shadow: inset 0px 4px 4px gray;
+                border-radius: 35px;
+                padding: 10px 40px;
+                font-weight: bold;
+                font-size: 30px;
+                color: $light-green;
+    
+                &:hover {
+                    text-decoration: none;
+                    background-color: $light-green;
+                    color: white;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        .banner-text {
+           
+            .become-a-member-tilte { 
+                font-size: 3em;
+                margin: 0 auto 50px auto;
+                width: 545px;
+            }
+      
+            .become-a-member-button {
+                border-radius: 35px;
+                padding: 10px 40px;
+                font-size: 30px;
+    
+            }
+        }
+    }
+}
+  
+  
