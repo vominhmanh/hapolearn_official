@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Open Sans";
-  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+  font-family: "utm_bryantlgregular";
+  src: url("../fonts/UTM\ BryantLG.ttf");
 }
 
 @font-face {
@@ -10,7 +10,6 @@
     url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("truetype");
 }
 $font_Open_Sans: "Open Sans", sans-serif;
-$font_UTM_BryantLG: "utm_bryantlgregular";
 $opensans: "Open Sans", sans-serif;
 
 $utmbryantlg: "utm-bryantlg";
@@ -56,4 +55,8 @@ $font_UTM_BryantLG: "utm_bryantlgregular";
   border-radius: 50px !important;
   @include normal-link();
   @include active-link();
+}
+
+body {
+  font-family: $font_UTM_BryantLG;
 }
