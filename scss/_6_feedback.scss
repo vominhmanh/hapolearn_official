@@ -1,12 +1,10 @@
 .feedback {
-
     .feedback-title {
         color: $light-green;
         font-size: 2.5rem;
     }
 
     .feedback-description {
-
         @media only screen and (min-width: 1024px) {
             width: 60%;
             font-size: 26px;
@@ -31,8 +29,7 @@
     }
 }
 
-.customer {
-    
+.customer { 
     display: flex;
 
     .customer-avatar {
@@ -70,7 +67,6 @@
 }
 
 .comment-div {
-
     .comment {
         border: 0.5px solid gray;
         border-radius: 10px;
