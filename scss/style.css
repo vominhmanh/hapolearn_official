@@ -436,17 +436,17 @@ div.align {
     color: white;
     position: relative; }
 
-.logo-col .hapolearn-logo img {
+.logo-col .hapolearn-logo-icon {
   width: 35px; }
-.logo-col .hapolearn-logo span {
+.logo-col .hapolearn-logo-title {
   margin-left: 5px;
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 2px; }
-.logo-col .hapolearn-slogan {
-  letter-spacing: -0.05em;
-  width: 60%;
-  margin-left: 13%; }
+@media only screen and (min-width: 1200px) {
+  .logo-col .hapolearn-slogan {
+    width: 60%;
+    margin-left: 13%; } }
 
 .list ul {
   list-style: none; }
@@ -473,7 +473,7 @@ div.align {
       font-size: 30px; }
     .contact-col a span:nth-child(2) {
       display: block;
-      font-size: 0px;
+      font-size: 0;
       transition: font-size 0.5s; }
     .contact-col a:hover span:nth-child(2) {
       font-size: 20px; }

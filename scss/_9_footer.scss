@@ -19,10 +19,11 @@
 
 .logo-col {
   .hapolearn-logo {
-    img {
+    &-icon {
       width: 35px;
     }
-    span {
+
+    &-title {
       margin-left: 5px;
       font-size: 30px;
       font-weight: bold;
@@ -31,9 +32,10 @@
   }
 
   .hapolearn-slogan {
-    letter-spacing: -0.05em;
-    width: 60%;
-    margin-left: 13%;
+    @media only screen and (min-width: 1200px) {
+      width: 60%;
+      margin-left: 13%;
+    }
   }
 }
 
@@ -68,9 +70,10 @@
     span:nth-child(1) {
       font-size: 30px;
     }
+
     span:nth-child(2) {
       display: block;
-      font-size: 0px;
+      font-size: 0;
       transition: font-size 0.5s;
     }
 
@@ -96,143 +99,26 @@
     .feature-col {
       order: 1;
     }
+
     .terms-col {
       order: 2;
     }
+
     .logo-col {
       order: 3;
+
       .hapolearn-logo span {
         font-size: 20px;
       }
+
       .hapolearn-slogan {
         width: 100%;
         margin: 0;
       }
     }
+
     .contact-col {
       order: 4;
     }
   }
 }
-// .footer-top-contact {
-//   .facebook-icon {
-//     background-image: url(../assets/img/fb_icon.png);
-//     @include footer-top-button();
-//   }
-
-//   .phone-icon {
-//     background-image: url(../assets/img/phone_icon.png);
-//     @include footer-top-button();
-//   }
-
-//   .mail-icon {
-//     background-image: url(../assets/img/email_icon.png);
-//     @include footer-top-button();
-//   }
-// }
-
-// @media only screen and (max-width: 769px) {
-//   .footer {
-//     .footer-top {
-//       height: 220px;
-//     }
-//   }
-
-//   .style-hapolearn-img-and-slogan {
-//     padding-top: 28px;
-
-//     .hapolearn-img-footer {
-//       width: 170px;
-//       height: 35px;
-//     }
-
-//     .footer-top-slogan {
-//       font-size: 16px;
-//       width: 88%;
-//       margin-left: 36px;
-//     }
-//   }
-
-//   .style-home-feature-courses-blog,
-//   .style-contact-tou-faq {
-//     padding-top: 35px;
-//     padding-left: 15px;
-
-//     .style-a-tag {
-//       font-size: 18px;
-//     }
-//   }
-
-//   .footer-top-contact {
-//     .facebook-icon,
-//     .phone-icon,
-//     .mail-icon {
-//       width: 40px;
-//       height: 40px;
-//     }
-//   }
-// }
-
-// @media only screen and (max-width: 415px) {
-//   .footer {
-//     .footer-top {
-//       height: 370px;
-//     }
-//   }
-
-//   .style-hapolearn-img-and-slogan {
-//     width: 50vw;
-//     padding-top: 0;
-//     position: absolute;
-//     bottom: 46px;
-//     left: 0;
-
-//     .hapolearn-img-footer {
-//       width: 150px;
-//       height: 31px;
-//     }
-
-//     .footer-top-slogan {
-//       font-size: 17px;
-//       width: 126%;
-//       margin-left: 81px;
-//     }
-//   }
-
-//   .style-home-feature-courses-blog,
-//   .style-contact-tou-faq {
-//     padding-top: 0;
-//     width: 50vw;
-//     padding-left: 44px;
-//     position: absolute;
-
-//     .style-a-tag {
-//       font-size: 17px;
-//     }
-//   }
-
-//   .style-home-feature-courses-blog {
-//     top: 40px;
-//     left: 0;
-//   }
-
-//   .style-contact-tou-faq {
-//     top: 40px;
-//     right: 0;
-//   }
-
-//   .footer-top-contact {
-//     width: 50vw;
-//     position: absolute;
-//     right: 0;
-//     bottom: 95px;
-//     padding-left: 48px;
-
-//     .facebook-icon,
-//     .phone-icon,
-//     .mail-icon {
-//       width: 30px;
-//       height: 30px;
-//     }
-//   }
-// }
