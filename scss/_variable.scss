@@ -1,13 +1,13 @@
 @font-face {
-    font-family: "utm_bryantlgregular";
-    src: url("../fonts/UTM\ BryantLG.ttf");
+  font-family: "utm_bryantlgregular";
+  src: url("../fonts/UTM\ BryantLG.ttf");
 }
 
 @font-face {
-    font-family: "utm-bryantlg";
-    src: url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("woff"),
-        url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("opentype"),
-        url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("truetype");
+  font-family: "utm-bryantlg";
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("woff"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("opentype"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("truetype");
 }
 $font_Open_Sans: "Open Sans", sans-serif;
 $opensans: "Open Sans", sans-serif;
@@ -22,49 +22,49 @@ $font_Open_Sans: "Open Sans", sans-serif;
 $font_UTM_BryantLG: "utm_bryantlgregular";
 
 @mixin opensans {
-    font-family: $opensans;
-    font-size: 1rem;
-    font-weight: 700px;
-    line-height: 19.07px;
+  font-family: $opensans;
+  font-size: 1rem;
+  font-weight: 700px;
+  line-height: 19.07px;
 }
 
 @mixin utmbryantlg {
-    font-family: $utmbryantlg;
-    font-size: 1rem;
-    font-weight: 700px;
-    line-height: 19.07px;
-    color: black;
+  font-family: $utmbryantlg;
+  font-size: 1rem;
+  font-weight: 700px;
+  line-height: 19.07px;
+  color: black;
 }
 
 @mixin normal-link {
-    border-radius: 25px;
-    padding: 10px 30px;
+  border-radius: 25px;
+  padding: 10px 30px;
 }
 
 @mixin active-link {
-    background-color: $active-bg;
-    color: white !important;
+  background-color: $active-bg;
+  color: white !important;
 }
 
 @mixin active-link-mobile {
-    background-color: white !important;
-    color: $light-green !important;
+  background-color: white !important;
+  color: $light-green !important;
 }
 
 .active-btn {
-    border-radius: 50px !important;
-    @include normal-link();
-    @include active-link();
+  border-radius: 50px !important;
+  @include normal-link();
+  @include active-link();
 }
 
 body {
-    font-family: $font_UTM_BryantLG;
-    letter-spacing: -0.05em;
+  font-family: $font_UTM_BryantLG;
+  letter-spacing: -0.05em;
 }
 
 h1.title {
-    color: $light-green;
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
+  color: $light-green;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
 }
