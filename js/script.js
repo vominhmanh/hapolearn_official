@@ -3,7 +3,7 @@ $( document ).ready( function ()
   $( '.feedback-list' ).slick( {
     dots: true,
     infinite: true,
-    arrows: true,
+    arrows: false,
     speed: 300,
     slidesToShow: 2,
     slidesToScroll: 2,

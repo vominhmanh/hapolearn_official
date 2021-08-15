@@ -12,7 +12,14 @@
   color: white !important; }
 
 body {
-  font-family: "utm_bryantlgregular"; }
+  font-family: "utm_bryantlgregular";
+  letter-spacing: -0.05em; }
+
+h1.title {
+  color: #b2d235;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center; }
 
 header {
   padding: 2vh 0;
@@ -274,9 +281,6 @@ div.align {
 
 .feedback {
   padding-bottom: 100px; }
-  .feedback .feedback-title {
-    color: #b2d235;
-    font-size: 2.5rem; }
   @media only screen and (min-width: 1024px) {
     .feedback .feedback-description {
       width: 60%;
@@ -346,7 +350,7 @@ div.align {
 .become-a-member-banner {
   position: relative; }
   .become-a-member-banner .banner-text {
-    background-image: url(/images/green_banner.png);
+    background-image: url(../images/green_banner.png);
     background-position: center;
     background-size: cover;
     padding: 10% 0; }
@@ -397,5 +401,104 @@ div.align {
       border-radius: 35px;
       padding: 10px 40px;
       font-size: 30px; } }
+
+.statistic {
+  padding: 5% 0; }
+  .statistic-detail {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 0 0; }
+
+.statistic-detail-part {
+  padding: 0 0 40px 0;
+  font-size: 60px; }
+  .statistic-detail-part .statistic-subtitle {
+    font-weight: bold; }
+  .statistic-detail-part .statistic-number {
+    color: #b2d235;
+    font-weight: bold; }
+  @media only screen and (max-width: 1199.98px) {
+    .statistic-detail-part {
+      font-size: 40px; } }
+
+.footer-copyright {
+  position: relative;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 15px; }
+
+.footer {
+  position: relative;
+  background-color: dimgray; }
+  .footer .footer-main {
+    padding: 5% 0;
+    color: white;
+    position: relative; }
+
+.logo-col .hapolearn-logo-icon {
+  width: 35px; }
+.logo-col .hapolearn-logo-title {
+  margin-left: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px; }
+@media only screen and (min-width: 1200px) {
+  .logo-col .hapolearn-slogan {
+    width: 60%;
+    margin-left: 13%; } }
+
+.list ul {
+  list-style: none; }
+  .list ul a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 35px;
+    transition: font-size 0.5s; }
+    .list ul a:hover {
+      font-size: 25px; }
+
+.contact-col {
+  display: flex;
+  justify-content: between;
+  position: relative; }
+  .contact-col a {
+    color: white;
+    text-align: center;
+    text-decoration: none; }
+    .contact-col a span:nth-child(1) {
+      font-size: 30px; }
+    .contact-col a span:nth-child(2) {
+      display: block;
+      font-size: 0;
+      transition: font-size 0.5s; }
+    .contact-col a:hover span:nth-child(2) {
+      font-size: 20px; }
+      @media only screen and (max-width: 1199.98px) {
+        .contact-col a:hover span:nth-child(2) {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0); } }
+
+@media only screen and (max-width: 575.98px) {
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap; }
+    .footer-main .feature-col {
+      order: 1; }
+    .footer-main .terms-col {
+      order: 2; }
+    .footer-main .logo-col {
+      order: 3; }
+      .footer-main .logo-col .hapolearn-logo span {
+        font-size: 20px; }
+      .footer-main .logo-col .hapolearn-slogan {
+        width: 100%;
+        margin: 0; }
+    .footer-main .contact-col {
+      order: 4; } }
 
 /*# sourceMappingURL=style.css.map */

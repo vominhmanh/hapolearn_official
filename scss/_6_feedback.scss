@@ -1,11 +1,6 @@
 .feedback {
   padding-bottom: 100px;
 
-  .feedback-title {
-    color: $light-green;
-    font-size: 2.5rem;
-  }
-
   .feedback-description {
     @media only screen and (min-width: 1024px) {
       width: 60%;
