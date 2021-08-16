@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage | HapoLearn</title>
+    <link rel="icon" type="image/png" href="/images/logo_small.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,8 +25,38 @@
 </head>
 
 <body>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById( 'fb-customer-chat' );
+        chatbox.setAttribute( "page_id", "1763063643947711" );
+        chatbox.setAttribute( "attribution", "biz_inbox" );
+
+        window.fbAsyncInit = function ()
+        {
+            FB.init( {
+                xfbml: true,
+                version: 'v11.0'
+            } );
+        };
+
+        ( function ( d, s, id )
+        {
+            var js, fjs = d.getElementsByTagName( s )[ 0 ];
+            if ( d.getElementById( id ) ) return;
+            js = d.createElement( s ); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore( js, fjs );
+        }( document, 'script', 'facebook-jssdk' ) );
+    </script>
+
     <header class="header fixed">
-        <div class="container">
+        <div class="container-fluid container-custom">
             <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light">
                 <a class="navbar-brand" href="#">
                     <div class="img-logo">
@@ -77,11 +108,14 @@
                     <img class="d-block w-100" src="images/hapo_learn_banner.png" alt="First slide">
 
                     <div class="header-banner-title">
-                        <h1 class="display-4 learn-anytime-anywhere">LEARN Anytime, Anywhere</h1>
+                        <h1 class="display-4 learn-anytime-anywhere">Learn Anytime, Anywhere</h1>
                         <h1 class="font-weight-bold at-hapolearn">at HapoLearn <span><img src="images/logo_small.png">
                                 !</span></h1>
                         <p class='description'>Interactive lessons,"on-the-go"<br>practive,peer support.</p>
-                        <a class="btn large-btn active-btn my-3 font-weight-bold start-learning">Start Learning Now!</a>
+
+                        <a class="green-btn hover-green-btn large-inset-shadow start-learning">Start
+                            Learning Now!</a>
+
                     </div>
                 </div>
             </div>
@@ -91,7 +125,7 @@
     <div class="header-footer"></div>
 
     <div class="outstanding-session courses-session">
-        <div class="container">
+        <div class="container-fluid  container-fixed">
             <div class="row">
                 <div class="col-lg-4 col-md-4 d-flex justify-content-center">
                     <div class="card outstanding-course-card">
@@ -99,11 +133,16 @@
                             <img src="images/frontend.png" alt="html/css/js">
                         </div>
                         <div class="card-body text-center">
-                            <h5 class="card-title">HTML/CSS/JS TUTORIAL</h5>
+                            <h5 class="card-title">HTML/CSS/JS</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content. Some quick example text to build on the card title and make up
+                                the bulk
+                                of the card's content. Some quick example text to build on the card title and make up
+                                the bulk
                                 of the card's content.</p>
                             <div class="text-center course-link">
-                                <a href="#" class="course-link-a">Take this course</a>
+                                <a href="#" class="green-btn hover-green-btn large-inset-shadow course-link-a">Take this
+                                    course</a>
                             </div>
                         </div>
                     </div>
@@ -116,9 +155,14 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Java TUTORIAL</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content. Some quick example text to build on the card title and make up
+                                the bulk
+                                of the card's content. Some quick example text to build on the card title and make up
+                                the bulk
                                 of the card's content.</p>
                             <div class="text-center course-link">
-                                <a href="#" class="course-link-a">Take this course</a>
+                                <a href="#" class="green-btn hover-green-btn large-inset-shadow course-link-a">Take this
+                                    course</a>
                             </div>
                         </div>
                     </div>
@@ -133,7 +177,8 @@
                             <p class="card-text"> Some quick example text to build on the card title and make up the
                                 card's content. build on the card tit.</p>
                             <div class="text-center course-link">
-                                <a href="#" class="course-link-a">Take this course</a>
+                                <a href="#" class="green-btn hover-green-btn large-inset-shadow course-link-a">Take this
+                                    course</a>
                             </div>
                         </div>
                     </div>
@@ -143,8 +188,8 @@
     </div>
 
     <div class="other-courses-session courses-session">
-        <div class="container">
-            <h1 class="other-courses-title text-center font-weight-bold">Other Courses</h1>
+        <div class="container-fluid  container-fixed">
+            <h1 class="title other-courses-title text-center font-weight-bold">Other Courses</h1>
             <hr class="text-center title-underline">
             <div class="row">
                 <div class="col-lg-4 col-md-4 d-flex justify-content-center">
@@ -153,11 +198,16 @@
                             <img src="images/frontend.png" alt="html/css/js">
                         </div>
                         <div class="card-body text-center">
-                            <h5 class="card-title">HTML/CSS/JS TUTORIAL</h5>
+                            <h5 class="card-title">HTML/CSS/JS </h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content. Some quick example text to build on the card title and make up
+                                the bulk
+                                of the card's content. Some quick example text to build on the card title and make up
+                                the bulk
                                 of the card's content.</p>
                             <div class="text-center course-link">
-                                <a href="#" class="course-link-a">Take this course</a>
+                                <a href="#" class="green-btn hover-green-btn large-inset-shadow course-link-a">Take this
+                                    course</a>
                             </div>
                         </div>
                     </div>
@@ -168,11 +218,16 @@
                             <img src="images/frontend.png" alt="html/css/js">
                         </div>
                         <div class="card-body text-center">
-                            <h5 class="card-title">HTML/CSS/JS TUTORIAL</h5>
+                            <h5 class="card-title">HTML/CSS/JS</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content. Some quick example text to build on the card title and make up
+                                the bulk
+                                of the card's content. Some quick example text to build on the card title and make up
+                                the bulk
                                 of the card's content.</p>
                             <div class="text-center course-link">
-                                <a href="#" class="course-link-a">Take this course</a>
+                                <a href="#" class="green-btn hover-green-btn large-inset-shadow course-link-a">Take this
+                                    course</a>
                             </div>
                         </div>
                     </div>
@@ -183,18 +238,23 @@
                             <img src="images/frontend.png" alt="html/css/js">
                         </div>
                         <div class="card-body text-center">
-                            <h5 class="card-title">HTML/CSS/JS TUTORIAL</h5>
+                            <h5 class="card-title">HTML/CSS/JS</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content. Some quick example text to build on the card title and make up
+                                the bulk
+                                of the card's content. Some quick example text to build on the card title and make up
+                                the bulk
                                 of the card's content.</p>
                             <div class="text-center course-link">
-                                <a href="#" class="course-link-a">Take this course</a>
+                                <a href="#" class="green-btn hover-green-btn large-inset-shadow course-link-a">Take this
+                                    course</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <a href="#" class="view-other-courses m-3">
-                <h1 class="text-center font-weight-bold h-mobile">View all our courses <i
+                <h1 class="view-other-courses-title text-center font-weight-bold">View all our courses <i
                         class="fas fa-long-arrow-alt-right"></i>
                 </h1>
             </a>
@@ -237,7 +297,7 @@
         </banner>
     </div>
     <div class="feedback">
-        <div class="container">
+        <div class="container-fluid  container-fixed">
             <h1 class="title feedback-title text-center font-weight-bold">Feedback</h1>
             <hr class="text-center title-underline">
             <p class="feedback-description mx-auto text-center"> What other students turned professionals have to say
@@ -257,8 +317,7 @@
                     <div class="arrow-down"></div>
                     <div class="mt-3 customer">
                         <div class="customer-avatar">
-                            <img width="100%" class="custom-avatar-img" src="./images/avatar_hapolearn.jpg"
-                                alt="avatar">
+                            <img width="100%" class="custom-avatar-img" src="./images/avatar.png" alt="avatar">
                         </div>
                         <div class="ml-3">
                             <div class="customer-name">Nguyễn Văn An</div>
@@ -285,8 +344,7 @@
                     <div class="arrow-down"></div>
                     <div class="mt-3 customer">
                         <div class="customer-avatar">
-                            <img width="100%" class="custom-avatar-img" src="./images/avatar_hapolearn.jpg"
-                                alt="avatar">
+                            <img width="100%" class="custom-avatar-img" src="./images/avatar.png" alt="avatar">
                         </div>
                         <div class="ml-3">
                             <div class="customer-name">Hoang Anh Nguyen</div>
@@ -310,11 +368,9 @@
                             Thank you Eddie Bryan.”
                         </p>
                     </div>
-                    <div class="arrow-down"></div>
                     <div class="mt-3 customer">
                         <div class="customer-avatar">
-                            <img width="100%" class="custom-avatar-img" src="./images/avatar_hapolearn.jpg"
-                                alt="avatar">
+                            <img width="100%" class="custom-avatar-img" src="./images/avatar.png" alt="avatar">
                         </div>
                         <div class="ml-3">
                             <div class="customer-name">Võ Minh Mạnh</div>
@@ -341,8 +397,7 @@
                     <div class="arrow-down"></div>
                     <div class="mt-3 customer">
                         <div class="customer-avatar">
-                            <img width="100%" class="custom-avatar-img" src="./images/avatar_hapolearn.jpg"
-                                alt="avatar">
+                            <img width="100%" class="custom-avatar-img" src="./images/avatar.png" alt="avatar">
                         </div>
                         <div class="ml-3">
                             <div class="customer-name">Hoang Anh Nguyen</div>
@@ -370,7 +425,7 @@
     </div>
 
     <div class="statistic">
-        <div class="container">
+        <div class="container-fluid  container-fixed">
             <h1 class="title statistic-title">Statistic</h1>
             <hr class="text-center title-underline">
             <div class="statistic-detail row text-center">
@@ -391,13 +446,12 @@
     </div>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container-fluid  container-fixed">
             <div class="footer-main">
                 <div class="row">
-                    <div class="logo-col col-sm-4 col-7 d-flex flex-column">
+                    <div class="logo-col col-sm-5 col-7 d-flex flex-column">
                         <span class="hapolearn-logo d-flex align-items-center">
-                            <img class="hapolearn-logo-icon" src="./images/logo_small.png" alt="HapoLearn">
-                            <span class="hapolearn-logo-title">HapoLearn</span>
+                            <img src="/images/hapo_learn_white.png" alt="hapo_learn">
                         </span>
                         <span class="hapolearn-slogan">Interactive lessons, "on-the-go"
                             practice, peer support.</span>
@@ -410,7 +464,7 @@
                             <li><a href="#">Blog</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-3 col-5 terms-col list">
+                    <div class="col-sm-2 col-5 terms-col list">
                         <ul>
                             <li><a href="#">Terms of Use</a></li>
                             <li><a href="#">Contact us</a></li>
@@ -452,6 +506,7 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
+
 </body>
 
 </html>
