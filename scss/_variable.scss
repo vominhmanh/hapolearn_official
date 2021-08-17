@@ -22,7 +22,7 @@ $dark: #505353;
 $whitesmoke: #f2f2f2;
 $darkred: #dc4e41;
 $darkblue: #3b5999;
-
+$quiteblack: #454545;
 $pretty--color-success: #b2d235;
 
 $font_Open_Sans: "Open Sans", sans-serif;
@@ -94,8 +94,10 @@ body {
   max-width: 1200px;
 }
 
-h1.title {
+.title {
   color: $nearblack;
+  width: -webkit-fit-content;
+  margin: auto;
   @media only screen and (min-width: 1200px) {
     font-size: 80px;
   }
@@ -112,7 +114,7 @@ h1.title {
 .title-underline {
   border: 4px solid $active-bg;
   border-radius: 10px;
-  width: 15%;
+  margin-top: 0;
 }
 
 .input-custom {

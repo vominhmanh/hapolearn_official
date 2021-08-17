@@ -30,6 +30,11 @@
     }
   }
 
+  .input-custom:focus {
+    border-color: gray;
+    box-shadow: 0 0 0 0.02rem grey;
+  }
+
   .login-btn {
     font-size: 18px;
     padding: 10px 75px;
@@ -104,6 +109,10 @@
       border-radius: 0;
       height: 100%;
     }
+
+    &:hover {
+      border-color: transparent;
+    }
   }
 }
 
@@ -117,6 +126,9 @@
     .input-custom {
       height: 45px;
       font-size: 18px !important;
+      &:focus {
+        border-color: $whitesmoke !important;
+      }
     }
 
     .label-text-style {
