@@ -18,7 +18,8 @@
 
 .hover-green-btn:hover {
   color: #11114e !important;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 body {
   font-family: "utm_bryantlgregular";
@@ -49,6 +50,15 @@ h1.title {
   border: 4px solid #b2d235;
   border-radius: 10px;
   width: 15%; }
+
+.input-custom {
+  background: #f2f2f2;
+  border: 1px solid white;
+  border-radius: 0;
+  height: 60px; }
+  @media only screen and (max-width: 575.98px) {
+    .input-custom {
+      font-size: 45px !important; } }
 
 header {
   padding: 2vh 0;
@@ -541,5 +551,111 @@ div.align {
         margin: 0; }
     .footer-main .contact-col {
       order: 4; } }
+.login-register-modal .border-modal-custom {
+  border-radius: 0;
+  position: relative; }
+.login-register-modal .close-btn {
+  position: absolute;
+  top: -11px;
+  right: -12px;
+  color: #b2d235;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 30px;
+  opacity: 1; }
+.login-register-modal .label-text-style {
+  font-weight: bold;
+  font-size: 20px; }
+.login-register-modal .forgot-password-txt {
+  text-decoration: underline;
+  color: #11114e;
+  float: right;
+  font-size: 18px; }
+  .login-register-modal .forgot-password-txt:hover {
+    color: #b2d235; }
+.login-register-modal .login-btn {
+  font-size: 18px;
+  padding: 10px 75px;
+  max-width: 100%; }
+.login-register-modal .login-with-txt {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 8px; }
+.login-register-modal .login-with-txt::before,
+.login-register-modal .login-with-txt::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #b2d235;
+  margin-right: 0.25em; }
+.login-register-modal .login-with-google,
+.login-register-modal .login-with-facebook {
+  width: 100%;
+  height: 55px;
+  font-weight: bold;
+  font-size: 19px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 2px; }
+.login-register-modal .login-with-google {
+  background: #DC4E41; }
+  .login-register-modal .login-with-google:hover {
+    background-color: red; }
+.login-register-modal .login-with-facebook {
+  background: #3B5999; }
+  .login-register-modal .login-with-facebook:hover {
+    background-color: blue; }
+
+.login-register-bar {
+  height: 70px;
+  background-color: white;
+  border-bottom: 1px solid #b2d235; }
+  .login-register-bar .login-nav-tab,
+  .login-register-bar .register-nav-tab {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    background-color: white;
+    color: #b2d235; }
+    .login-register-bar .login-nav-tab.active,
+    .login-register-bar .register-nav-tab.active {
+      background-color: #b2d235;
+      color: white;
+      border: none;
+      border-radius: 0;
+      height: 100%; }
+
+@media only screen and (max-width: 575.98px) {
+  .login-register-modal .border-modal-custom {
+    margin-left: 20px;
+    margin-right: 20px; }
+  .login-register-modal .input-custom {
+    height: 45px;
+    font-size: 18px !important; }
+  .login-register-modal .label-text-style {
+    font-size: 18px; }
+  .login-register-modal .remember-me-label {
+    font-size: 14px; }
+  .login-register-modal .forgot-password-txt {
+    font-size: 14px; }
+  .login-register-modal .login-with-google,
+  .login-register-modal .login-with-facebook {
+    height: 45px; }
+
+  .login-register-bar {
+    height: 60px; }
+    .login-register-bar .login-nav-tab,
+    .login-register-bar .register-nav-tab {
+      font-size: 22px;
+      line-height: 41px; }
+      .login-register-bar .login-nav-tab.active,
+      .login-register-bar .register-nav-tab.active {
+        height: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
