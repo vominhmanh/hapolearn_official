@@ -61,6 +61,7 @@
 
       .at-hapolearn {
         font-size: 50px;
+        -webkit-text-stroke-width: medium;
       }
 
       .description {
@@ -71,6 +72,7 @@
       .start-learning {
         font-size: 30px;
         padding: 15px 75px;
+        -webkit-text-stroke-width: thin;
       }
     }
   }

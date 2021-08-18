@@ -37,7 +37,8 @@ body {
   width: -webkit-fit-content;
   margin: auto;
   font-weight: bolder;
-  text-align: center; }
+  text-align: center;
+  -webkit-text-stroke-width: thin; }
   @media only screen and (min-width: 1200px) {
     .title {
       font-size: 80px; } }
@@ -174,13 +175,15 @@ div.align {
       top: 20%;
       left: 3%; }
       .header-banner .header-banner-title .at-hapolearn {
-        font-size: 50px; }
+        font-size: 50px;
+        -webkit-text-stroke-width: medium; }
       .header-banner .header-banner-title .description {
         font-size: 20px;
         margin-bottom: 40px; }
       .header-banner .header-banner-title .start-learning {
         font-size: 30px;
-        padding: 15px 75px; } }
+        padding: 15px 75px;
+        -webkit-text-stroke-width: thin; } }
 
 .header-footer {
   height: 150px;
@@ -214,7 +217,7 @@ div.align {
     color: #b2d235 !important;
     font-size: 30px;
     font-weight: bolder;
-    letter-spacing: -2px; }
+    -webkit-text-stroke-width: 1px; }
   .card .card-text {
     white-space: wrap;
     height: 100px;
@@ -454,7 +457,8 @@ div.align {
     .become-a-member-banner .banner-text .become-a-member-tilte {
       font-size: 60px;
       margin: 0 auto 50px auto;
-      width: 650px; }
+      width: 650px;
+      -webkit-text-stroke-width: thin; }
     .become-a-member-banner .banner-text .become-a-member-button {
       border-radius: 35px;
       padding: 10px 40px;
