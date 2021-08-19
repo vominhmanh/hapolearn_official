@@ -176,14 +176,14 @@ div.align {
       left: 3%; }
       .header-banner .header-banner-title .at-hapolearn {
         font-size: 50px;
-        -webkit-text-stroke-width: medium; }
+        -webkit-text-stroke-width: 4px; }
       .header-banner .header-banner-title .description {
         font-size: 20px;
         margin-bottom: 40px; }
       .header-banner .header-banner-title .start-learning {
         font-size: 30px;
         padding: 15px 75px;
-        -webkit-text-stroke-width: thin; } }
+        -webkit-text-stroke-width: 1px; } }
 
 .header-footer {
   height: 150px;
