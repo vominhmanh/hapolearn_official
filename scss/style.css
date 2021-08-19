@@ -25,12 +25,12 @@ body {
   font-family: "utm_bryantlgregular";
   letter-spacing: -0.05em; }
 
-.container-custom {
-  width: 90%;
-  margin: auto; }
-
 .container-fixed {
-  max-width: 1200px; }
+  max-width: 1200px;
+  margin: auto !important; }
+  @media only screen and (max-width: 767.98px) {
+    .container-fixed {
+      width: 90% !important; } }
 
 .title {
   color: #11114e;
@@ -47,7 +47,7 @@ body {
       font-size: 12vw !important; } }
   @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
     .title {
-      font-size: 6vw !important; } }
+      font-size: 12vw !important; } }
 
 .title-underline {
   border: 4px solid #b2d235;
@@ -67,14 +67,27 @@ header {
   padding: 2vh 0;
   background-color: white;
   letter-spacing: 0;
-  font-size: 14px; }
+  font-size: 14px;
+  box-shadow: 0 0 10px 1px gray; }
 
 .navbar {
   padding: 0; }
-  @media (min-width: 576px) and (max-width: 1199.98px) {
+  @media (min-width: 576px) and (max-width: 767.98px) {
     .navbar {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column; }
+      .navbar .navbar-menu-div {
+        width: 80%; }
+        .navbar .navbar-menu-div .navbar-nav {
+          flex-wrap: wrap;
+          justify-content: center; } }
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    .navbar {
+      display: flex;
+      flex-direction: column; }
+      .navbar .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: center; } }
   @media only screen and (max-width: 575.98px) {
     .navbar a.navbar-brand {
       position: absolute;
@@ -88,7 +101,7 @@ header {
   .fixed {
     position: fixed;
     z-index: 100;
-    width: 100vw;
+    width: 100%;
     background-color: white; } }
 
 .navbar-menu-div ul li {
@@ -96,7 +109,8 @@ header {
   font-weight: 700px;
   line-height: 19.07px;
   text-align: center;
-  padding: 0 5px; }
+  padding: 0 5px;
+  line-height: 50px; }
   .navbar-menu-div ul li a {
     display: inline;
     padding: 8px 16px;
@@ -135,6 +149,10 @@ header {
         color: #b2d235 !important; } }
 div.align {
   height: 72px; }
+
+.expanding {
+  background-image: url("../images/times-solid.svg") !important;
+  opacity: 0.3; }
 
 .header-banner {
   color: #11114e; }
@@ -189,7 +207,7 @@ div.align {
   height: 150px;
   background-color: #eaebf0;
   background: white;
-  background: linear-gradient(180deg, white 20%, lightgray 100%); }
+  background: linear-gradient(180deg, #fffbfb 20%, lightgray 100%); }
   @media only screen and (max-width: 575.98px) {
     .header-footer {
       height: 100px; } }
@@ -419,7 +437,8 @@ div.align {
     .become-a-member-banner .banner-text .become-a-member-tilte {
       font-weight: bolder;
       letter-spacing: -0.02em;
-      color: white; }
+      color: white;
+      -webkit-text-stroke-width: thin; }
     .become-a-member-banner .banner-text .become-a-member-button {
       background: white;
       box-shadow: inset 0px 4px 4px gray;
@@ -431,16 +450,16 @@ div.align {
         color: #11114e; }
   @media only screen and (max-width: 575.98px) {
     .become-a-member-banner .banner-text .become-a-member-tilte {
-      font-size: 1rem;
-      margin: 0 20% 5% 20%; }
+      font-size: 23px;
+      margin: 0 10% 5% 10%; }
     .become-a-member-banner .banner-text .become-a-member-button {
       padding: 2% 5%;
       font-size: 0.8rem; } }
   @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
     .become-a-member-banner .banner-text .become-a-member-tilte {
-      font-size: 2rem;
+      font-size: 40px;
       margin: 0 auto 50px auto;
-      width: 545px; }
+      width: 520px; }
     .become-a-member-banner .banner-text .become-a-member-button {
       background: white;
       box-shadow: inset 0px 4px 4px gray;
@@ -531,7 +550,7 @@ div.align {
 
 .contact-col {
   display: flex;
-  justify-content: between;
+  justify-content: space-evenly !important;
   align-items: center; }
   .contact-col a {
     color: white;
@@ -546,12 +565,12 @@ div.align {
       transition: font-size 0.5s;
       position: absolute;
       left: 50%;
-      transform: translate(-50%);
+      transform: translate(-50%, 10px);
       z-index: 10; }
     .contact-col a:hover span:nth-child(2) {
       font-size: 20px; }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 767.98px) {
   .footer-main {
     display: flex;
     flex-wrap: wrap; }
