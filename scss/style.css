@@ -164,7 +164,8 @@ div.align {
       .header-banner .header-banner-title .learn-anytime-anywhere {
         font-size: 25px; }
       .header-banner .header-banner-title .at-hapolearn {
-        font-size: 25px; }
+        font-size: 25px;
+        -webkit-text-stroke-width: 2px; }
       .header-banner .header-banner-title .description {
         font-size: 15px; }
       .header-banner .header-banner-title .start-learning {
@@ -181,7 +182,8 @@ div.align {
       .header-banner .header-banner-title .learn-anytime-anywhere {
         font-size: 25px; }
       .header-banner .header-banner-title .at-hapolearn {
-        font-size: 25px; }
+        font-size: 25px;
+        -webkit-text-stroke-width: 2px; }
       .header-banner .header-banner-title .description {
         font-size: 15px; }
       .header-banner .header-banner-title .start-learning {
@@ -194,7 +196,7 @@ div.align {
       left: 3%; }
       .header-banner .header-banner-title .at-hapolearn {
         font-size: 50px;
-        -webkit-text-stroke-width: 4px; }
+        -webkit-text-stroke-width: 2px; }
       .header-banner .header-banner-title .description {
         font-size: 20px;
         margin-bottom: 40px; }
