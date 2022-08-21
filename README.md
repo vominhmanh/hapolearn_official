@@ -1,2 +1,2 @@
 # hapolearn
- e-learning website of haposoft
+ e-learning website
